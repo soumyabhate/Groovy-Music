@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <title>Groovy - Your favourite music is here</title>
+        <link rel="stylesheet" href="style.css">
+        </head>
+<body>
+    <nav>
+        <ul class="nav nav-pills">
+            <li class="brand"><img src="groovy.jpg" alt="Groovy"> Groovy</li>
+            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="search.html">Search</a></li>
+            <li class="nav-item"><a class="nav-link" href="lib.html">Your Library</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="songList">
+            <h1>Frequently Played Songs</h1>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <img alt="All Of Me">
+                    <span class="songName">All Of Me</span>
+                    <span class="songlistplay"><span class="timestamp">04:29 <i id="0" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="Broken">
+                    <span class="songName">Broken</span>
+                    <span class="songlistplay"><span class="timestamp">03:15 <i id="1" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="Dancing With Your Ghost">
+                    <span class="songName">Dancing With Your Ghost</span>
+                    <span class="songlistplay"><span class="timestamp">03:17 <i id="2" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="Mine">
+                    <span class="songName">Mine</span>
+                    <span class="songlistplay"><span class="timestamp">03:26 <i id="3" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="Older">
+                    <span class="songName">Older</span>
+                    <span class="songlistplay"><span class="timestamp">03:11 <i id="4" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="This City">
+                    <span class="songName">This City</span>
+                    <span class="songlistplay"><span class="timestamp">03:14 <i id="5" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="Walked Through Hell">
+                    <span class="songName">Walked Through Hell</span>
+                    <span class="songlistplay"><span class="timestamp">03:36 <i id="6" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="Lucid Dreams">
+                    <span class="songName">Lucid Dreams</span>
+                    <span class="songlistplay"><span class="timestamp">03:59 <i id="7" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="Little Do You Know">
+                    <span class="songName">Little Do You Know</span>
+                    <span class="songlistplay"><span class="timestamp">03:05 <i id="8" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="Thinking Out Loud">
+                    <span class="songName">Thinking Out Loud</span>
+                    <span class="songlistplay"><span class="timestamp">04:41 <i id="9" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="icons">
+            <!-- fontawesome icons -->
+            <i class="fas fa-3x fa-step-backward" id="previous"></i>
+            <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+            <i class="fas fa-3x fa-step-forward" id="next"></i> 
+        </div>
+        <div class="songInfo">
+            <img src="playing.gif" width="42px" alt="" id="gif"> <span id="masterSongName">All Of Me</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/9da24abb85.js" crossorigin="anonymous"></script>
+</body>
+</html>
